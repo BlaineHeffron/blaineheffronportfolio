@@ -118,7 +118,7 @@ skills:
       - name: Gaming
         description: ""
         percent: 80
-        icon: game
+        icon: gamepad
         icon_pack: fas
       - name: Piano
         description: ""
@@ -133,7 +133,7 @@ skills:
       - name: Hiking
         description: ""
         percent: 90
-        icon: hiker
+        icon: hiking
         icon_pack: fas
       - name: Swimming
         description: ""
