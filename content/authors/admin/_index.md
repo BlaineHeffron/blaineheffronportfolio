@@ -45,39 +45,85 @@ education:
 skills:
   - name: Technical
     items:
+      - name: Scientific Research
+        description: ""
+        percent: 60
+        icon: vial
+        icon_pack: fas
       - name: Python
         description: ""
         percent: 80
         icon: python
         icon_pack: fab
-      - name: Data Science
+      - name: Full Stack Web Development
         description: ""
-        percent: 100
-        icon: chart-line
+        percent: 70
+        icon: code
         icon_pack: fas
-      - name: SQL
+      - name: Public Speaking
         description: ""
         percent: 40
-        icon: database
+        icon: user-friends
         icon_pack: fas
+      - name: C++
+        description: ""
+        percent: 50
+        icon: code
+        icon_pack: fas
+      - name: Data ETL
+        description: ""
+        percent: 50
+        icon: exchange-alt
+        icon_pack: fas
+      - name: Statistical Analysis
+        description: ""
+        percent: 60
+        icon: chart-line
+        icon_pack: fas
+      - name: Physics Simulation (Geant4, MCNP)
+        description: ""
+        percent: 70
+        icon: atom
+        icon_pack: fas
+      - name: Radiation Detection
+        description: ""
+        percent: 60
+        icon: radiation
+        icon_pack: fas
+      - name: Web Scraping
+        description: ""
+        percent: 30
+        icon: spider
+        icon_pack: fas
+
   - name: Hobbies
     color: "#eeac02"
     color_border: "#f0bf23"
     items:
-      - name: Hiking
+      - name: Kayaking
         description: ""
-        percent: 60
-        icon: person-hiking
+        percent: 70
+        icon: water
         icon_pack: fas
-      - name: Cats
-        description: ""
-        percent: 100
-        icon: cat
-        icon_pack: fas
-      - name: Photography
+      - name: Backpacking
         description: ""
         percent: 80
-        icon: camera-retro
+        icon: backpack
+        icon_pack: fas
+      - name: Cycling
+        description: ""
+        percent: 70
+        icon: bicycle
+        icon_pack: fas
+      - name: Meditation & Qigong
+        description: ""
+        percent: 50
+        icon: om
+        icon_pack: fas
+      - name: Piano
+        description: "Currently learning"
+        percent: 30
+        icon: music
         icon_pack: fas
 
 # Social/Academic Networking
