@@ -166,7 +166,7 @@ highlight_name: true
 
 Blaine is a seasoned full-stack web developer and physics Ph.D. graduate with over 10 years of programming and research experience. He currently serves as the CTO of Algorhythmic Labs.
 
-He doctoral research involved areas such as signal processing, particle transport simulation, and radiation detection. His career highlights include developing a product to integrate open API specified products with database software integration for CData, and applying machine learning models during his Ph.D. research in neutrino physics.
+His doctoral research involved areas such as signal processing, particle transport simulation, and radiation detection. His career highlights include developing a product to integrate open API specified products with database software integration for CData, and applying machine learning models during his Ph.D. research in neutrino physics.
 
 In his most recent role, he has been engaged in technical consulting, leveraging his expertise to help various clients enhance their website functionality and improve SEO rankings. Notably, he was responsible for the development of a web app integrated with Google Sheets for wedding planning, which significantly streamlined event management processes. He is currently the lead developer for Songcraft, a game designed to help children learn to read and play music.
 
