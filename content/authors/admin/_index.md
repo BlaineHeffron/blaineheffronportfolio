@@ -107,7 +107,7 @@ skills:
         icon_pack: fas
       - name: Meditation
         description: ""
-        percent: 60
+        percent: 70
         icon: om
         icon_pack: fas
       - name: QiGong
@@ -115,8 +115,13 @@ skills:
         percent: 50
         icon: om
         icon_pack: fas
+      - name: Gaming
+        description: ""
+        percent: 80
+        icon: game
+        icon_pack: fas
       - name: Piano
-        description: "Currently learning"
+        description: ""
         percent: 30
         icon: music
         icon_pack: fas
