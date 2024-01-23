@@ -65,7 +65,7 @@ skills:
         percent: 40
         icon: user-friends
         icon_pack: fas
-      - name: C++
+      - name: Machine Learning
         description: ""
         percent: 50
         icon: code
@@ -80,7 +80,7 @@ skills:
         percent: 60
         icon: chart-line
         icon_pack: fas
-      - name: Physics Simulation (Geant4, MCNP)
+      - name: Particle Transport Simulation (Geant4, MCNP)
         description: ""
         percent: 70
         icon: atom
@@ -89,11 +89,6 @@ skills:
         description: ""
         percent: 60
         icon: radiation
-        icon_pack: fas
-      - name: Web Scraping
-        description: ""
-        percent: 30
-        icon: spider
         icon_pack: fas
 
   - name: Hobbies
@@ -105,17 +100,17 @@ skills:
         percent: 70
         icon: water
         icon_pack: fas
-      - name: Backpacking
-        description: ""
-        percent: 80
-        icon: backpack
-        icon_pack: fas
       - name: Cycling
         description: ""
         percent: 70
         icon: bicycle
         icon_pack: fas
-      - name: Meditation & Qigong
+      - name: Meditation
+        description: ""
+        percent: 60
+        icon: om
+        icon_pack: fas
+      - name: QiGong
         description: ""
         percent: 50
         icon: om
@@ -124,6 +119,21 @@ skills:
         description: "Currently learning"
         percent: 30
         icon: music
+        icon_pack: fas
+      - name: Reading
+        description: ""
+        percent: 80
+        icon: book
+        icon_pack: fas
+      - name: Hiking
+        description: ""
+        percent: 90
+        icon: hiker
+        icon_pack: fas
+      - name: Swimming
+        description: ""
+        percent: 60
+        icon: swimming-pool
         icon_pack: fas
 
 # Social/Academic Networking
