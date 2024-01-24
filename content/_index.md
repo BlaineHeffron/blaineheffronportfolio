@@ -61,54 +61,54 @@ sections:
       #   Required fields are `title`, `company`, and `date_start`.
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-items:
-  - title: Full Stack Web Developer / Technical Consulting
-    company: Self-Employed
-    company_url: ""
-    company_logo: org-selfemployed
-    location: ""
-    date_start: "2023-02-01"
-    date_end: ""
-    description: |2-
-        Contracting work for resolving website issues for various clients, improving site functionality and boosting SEO ranking.
-        Developed a web app integrating Google Sheets with a wedding planning interface, which streamlined event management processes and received positive feedback from dozens of users.
-        Lead Full Stack Developer for an educational music game for children - [Songcraft](https://songcraftgame.com), helping bring in over $40k in funding.
+    items:
+    - title: Full Stack Web Developer / Technical Consulting
+        company: Self-Employed
+        company_url: ""
+        company_logo: org-selfemployed
+        location: ""
+        date_start: "2023-02-01"
+        date_end: ""
+        description: |2-
+            Contracting work for resolving website issues for various clients, improving site functionality and boosting SEO ranking.
+            Developed a web app integrating Google Sheets with a wedding planning interface, which streamlined event management processes and received positive feedback from dozens of users.
+            Lead Full Stack Developer for an educational music game for children - [Songcraft](https://songcraftgame.com), helping bring in over $40k in funding.
 
-  - title: Graduate Research Assistant
-    company: University of Tennessee, Oak Ridge National Lab
-    company_url: "https://www.phys.utk.edu/"
-    company_logo: org-UT
-    location: "Knoxville, TN"
-    date_start: "2019-08-01"
-    date_end: "2023-01-31"
-    description: |2-
-        Planned and implemented experiment to determine radiation field of reactor using Ge detector, leading to significant improvement in understanding the spacial variation and sources of gamma backgrounds.
-        Conducted advanced machine learning analysis to enhance neutrino signal for PROSPECT experiment, increasing effective statistics by over 3%.
-        Mentored several undergraduates and graduate students, fostering their research skills and contributing to academic success.
+    - title: Graduate Research Assistant
+        company: University of Tennessee, Oak Ridge National Lab
+        company_url: "https://www.phys.utk.edu/"
+        company_logo: org-UT
+        location: "Knoxville, TN"
+        date_start: "2019-08-01"
+        date_end: "2023-01-31"
+        description: |2-
+            Planned and implemented experiment to determine radiation field of reactor using Ge detector, leading to significant improvement in understanding the spacial variation and sources of gamma backgrounds.
+            Conducted advanced machine learning analysis to enhance neutrino signal for PROSPECT experiment, increasing effective statistics by over 3%.
+            Mentored several undergraduates and graduate students, fostering their research skills and contributing to academic success.
 
-  - title: Web Developer Contractor
-    company: Self-Employed
-    company_url: ""
-    company_logo: org-selfemployed
-    location: ""
-    date_start: "2017-01-01"
-    date_end: "2020-09-30"
-    description: |2-
-        Designed and developed multifaceted websites and web applications for diverse clients, enhancing user experience and interaction by implementing responsive design principles and improving SEO ranking.
-        Successfully maintained and updated the commercial website wythehotel.com for over 3 years, ensuring optimal performance, user engagement and consistent uptime.
-        Co-developed and co-founded Staqqr, an ambitious platform for auctioning video game services. Despite its eventual closure, the experience offered substantial insights into startup dynamics and entrepreneurship while garnering great web development experience.
+    - title: Web Developer Contractor
+        company: Self-Employed
+        company_url: ""
+        company_logo: org-selfemployed
+        location: ""
+        date_start: "2017-01-01"
+        date_end: "2020-09-30"
+        description: |2-
+            Designed and developed multifaceted websites and web applications for diverse clients, enhancing user experience and interaction by implementing responsive design principles and improving SEO ranking.
+            Successfully maintained and updated the commercial website wythehotel.com for over 3 years, ensuring optimal performance, user engagement and consistent uptime.
+            Co-developed and co-founded Staqqr, an ambitious platform for auctioning video game services. Despite its eventual closure, the experience offered substantial insights into startup dynamics and entrepreneurship while garnering great web development experience.
 
-  - title: Technical Support Engineer
-    company: CData Software
-    company_url: "https://www.cdata.com"
-    company_logo: org-cdata
-    location: ""
-    date_start: "2018-03-01"
-    date_end: "2019-08-31"
-    description: |2-
-        Provided technical support that increased client satisfaction for database software services provided by CData.
-        Earned promotion to lead support engineer, overseeing advanced support services for high priority clients.
-        Developed a innovative product for integrating open API specified products with existing database connectivity tools.
+    - title: Technical Support Engineer
+        company: CData Software
+        company_url: "https://www.cdata.com"
+        company_logo: org-cdata
+        location: ""
+        date_start: "2018-03-01"
+        date_end: "2019-08-31"
+        description: |2-
+            Provided technical support that increased client satisfaction for database software services provided by CData.
+            Earned promotion to lead support engineer, overseeing advanced support services for high priority clients.
+            Developed a innovative product for integrating open API specified products with existing database connectivity tools.
 
     design:
       columns: "2"
