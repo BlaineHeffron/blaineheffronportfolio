@@ -61,4 +61,6 @@ security:
 sitemap:
   _merge: deep
 minify:
+  disableXML: false
+  minifyOutput: true
   _merge: deep
