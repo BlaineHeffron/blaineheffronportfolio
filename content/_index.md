@@ -76,7 +76,7 @@ items:
 
   - title: Graduate Research Assistant
     company: University of Tennessee, Oak Ridge National Lab
-    company_url: "http://www.phys.utk.edu/"
+    company_url: "https://www.phys.utk.edu/"
     company_logo: org-UT
     location: "Knoxville, TN"
     date_start: "2019-08-01"
@@ -100,7 +100,7 @@ items:
 
   - title: Technical Support Engineer
     company: CData Software
-    company_url: ""
+    company_url: "https://www.cdata.com"
     company_logo: org-cdata
     location: ""
     date_start: "2018-03-01"
