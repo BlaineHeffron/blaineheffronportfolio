@@ -16,11 +16,12 @@ appearance:
 marketing:
   seo:
     site_type: Person
-    local_business_type: ""
+    local_business_type: "website development and analytics"
     org_name: "Blaine Heffron"
     description: "Blaine Heffron's portfolio of technical consulting services for website, app, and game development. Research experience and skills and publication list."
     twitter: ""
   analytics:
+    pirsch: "OKcREkltqBCuAvxTFoADo7Q7PcnGN1yG"
     google_analytics: ""
     baidu_tongji: ""
     google_tag_manager: ""
