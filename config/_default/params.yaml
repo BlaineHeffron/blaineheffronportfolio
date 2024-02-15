@@ -46,7 +46,7 @@ header:
 
 footer:
   copyright:
-    notice: "© {year} Blaine Heffron. This work is licensed under {license}"
+    notice: "© 2024 Blaine Heffron. This work is licensed under MIT"
     license:
       enable: true
       allow_derivatives: false
