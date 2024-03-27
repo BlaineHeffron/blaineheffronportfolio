@@ -169,7 +169,7 @@ social:
 highlight_name: true
 ---
 
-Blaine is a full-stack web developer and physics Ph.D. graduate with over 10 years of programming and research experience. He currently serves as the CTO of Algorhythmic Labs.
+Blaine is a full-stack web developer and physics Ph.D. graduate with over 12 years of programming and research experience. He currently serves as the CTO of Algorhythmic Labs.
 
 His doctoral research involved areas such as signal processing, particle transport simulation, and radiation detection. His career highlights include developing a product to integrate open API specified products with database software integration for CData, and applying machine learning models during his Ph.D. research in neutrino physics.
 

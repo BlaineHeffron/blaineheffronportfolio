@@ -46,7 +46,7 @@ header:
 
 footer:
   copyright:
-    notice: "© 2024 Blaine Heffron. This work is licensed under MIT"
+    notice: "© 2024 Blaine Heffron. This work is licensed under MIT. Photo by <a href='https://www.taylorlczerwinski.com/'>Taylor Czerwinski</a>."
     license:
       enable: true
       allow_derivatives: false
