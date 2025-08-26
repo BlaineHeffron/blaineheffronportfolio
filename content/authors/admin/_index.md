@@ -169,13 +169,9 @@ social:
 highlight_name: true
 ---
 
-Blaine is a full-stack web developer and physics Ph.D. graduate with over 12 years of programming and research experience. He currently serves as the CTO of Algorhythmic Labs.
+Blaine is a full-stack web developer and physics Ph.D. graduate with over 12 years of programming and research experience. He currently works with AhaLabs, focusing on building smart contracts for EquitX and developing tooling like scaffold-stellar, building on prior contributions to js-stellar-sdk, stellar-cli, and Loam. His expertise spans Rust for efficient systems programming, smart contract development, and TypeScript for scalable applications. His doctoral research involved signal processing, particle transport simulation, and radiation detection, culminating in a recent publication using machine learning to enhance signal-to-background ratios in the PROSPECT neutrino physics experiment.
 
-His doctoral research involved areas such as signal processing, particle transport simulation, and radiation detection. His career highlights include developing a product to integrate open API specified products with database software integration for CData, and applying machine learning models during his Ph.D. research in neutrino physics.
+Career highlights include developing products for API and database integration at CData, applying machine learning in neutrino physics, and providing technical consulting to optimize website functionality and SEO. Notably, he created a web app integrated with Google Sheets for wedding planning, streamlining event management. He serves as the lead developer for Songcraft, an educational game aiding children in learning to read and play music.
 
-In his most recent role, he has been engaged in technical consulting, leveraging his expertise to help various clients enhance their website functionality and improve SEO rankings. Notably, he was responsible for the development of a web app integrated with Google Sheets for wedding planning, which significantly streamlined event management processes. He is currently the lead developer for Songcraft, a game designed to help children learn to read and play music.
-
-Throughout his academic journey at the University of Tennessee and University of North Carolina, Blaine worked with multiple collaborations on neutrino physics experiments including [MAJORANA](https://www.npl.washington.edu/majorana/majorana-experiment), [PROSPECT](https://prospect.yale.edu/), and [LEGEND](https://legend-exp.org/). Utilizing his programming skills allowed him to provide meaningful contributions in the form of simulation and data analysis in addition to important detector development and radiation detection work. He also partipated in nuclear structure experiments at RIKEN and HRIBF.
-
-You can connect with him on [Github](https://github.com/blaineheffron) or [LinkedIn](https://linkedin.com/in/blaine-heffron). Reach out to him directly via his cell (843.452.8866) or email him at blaine@blaineheffron.com.
+You can connect with him on [Github](https://github.com/blaineheffron) or [LinkedIn](https://linkedin.com/in/blaine-heffron). Reach out to him directly via email at blaine@blaineheffron.com.
 {style="text-align: justify;"}
