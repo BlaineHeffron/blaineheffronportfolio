@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blaine Heffron — Full-Stack Developer, Physics PhD, Independent Researcher</title>
+  <meta name="description" content="Blaine Heffron is a full-stack developer and physics PhD building smart contract tooling, educational platforms, and conducting independent research in mathematical physics, computational biology, and information-geometric economics.">
+  <meta name="author" content="Blaine Heffron">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://blaineheffron.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blaine Heffron — Developer & Researcher">
+  <meta property="og:description" content="Full-stack developer and physics PhD. Building smart contract tooling for Stellar, educational platforms, and independent research in mathematical physics and computational biology.">
+  <meta property="og:url" content="https://blaineheffron.com/">
+  <meta property="og:site_name" content="Blaine Heffron">
+  <meta property="og:image" content="https://blaineheffron.com/assets/media/sharing.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blaine Heffron — Developer & Researcher">
+  <meta name="twitter:description" content="Full-stack developer and physics PhD. Smart contracts, educational platforms, and independent research.">
+  <meta name="twitter:image" content="https://blaineheffron.com/assets/media/sharing.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/static/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/assets/media/apple-touch-icon.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Blaine Heffron",
+    "url": "https://blaineheffron.com/",
+    "email": "mailto:blaine@blaineheffron.com",
+    "image": "https://blaineheffron.com/assets/media/sharing.png",
+    "description": "Full-stack developer and physics PhD building smart contract tooling for Stellar, educational platforms, and conducting independent research in mathematical physics, computational biology, and information-geometric economics.",
+    "jobTitle": "Full-Stack Developer & Independent Researcher",
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Tennessee",
+        "department": "Physics"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of North Carolina"
+      }
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "educationalLevel": "Doctoral",
+        "name": "PhD in Physics",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "University of Tennessee" },
+        "dateCreated": "2023"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "educationalLevel": "Master",
+        "name": "MS in Physics",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "University of Tennessee" },
+        "dateCreated": "2017"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "educationalLevel": "Bachelor",
+        "name": "BS in Physics",
+        "recognizedBy": { "@type": "CollegeOrUniversity", "name": "University of North Carolina" },
+        "dateCreated": "2012"
+      }
+    ],
+    "knowsAbout": ["Rust", "TypeScript", "Python", "Smart Contracts", "Stellar Blockchain", "Machine Learning", "Particle Physics", "Mathematical Physics", "Scientific Computing", "Signal Processing"],
+    "sameAs": [
+      "https://github.com/BlaineHeffron",
+      "https://www.linkedin.com/in/blaine-heffron",
+      "https://scholar.google.com/citations?user=8d-y4zoAAAAJ"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Blaine Heffron",
+    "url": "https://blaineheffron.com/",
+    "author": { "@type": "Person", "name": "Blaine Heffron" }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a href="#hero" class="skip-link">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Blaine Heffron</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/static/uploads/resume.pdf" target="_blank" rel="noopener">CV</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+            <span id="theme-icon">&#9789;</span>
+          </button>
+        </li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-gradient" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Developer &middot; Physicist &middot; Researcher</p>
+        <h1>Building software<br>at the edge of <em>science</em></h1>
+        <p class="hero-tagline">I build smart contract tooling for Stellar, run an EdTech company, and do independent research in mathematical physics, computational biology, and information geometry. Physics PhD, 12+ years writing code.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Work</a>
+          <a href="/research.html" class="btn btn-ghost">Read Research</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label">About</span>
+          <h2 class="section-title">Background</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal reveal-delay-1">
+            <p>I got my physics PhD from the University of Tennessee in 2023, where I worked on the PROSPECT neutrino experiment at Oak Ridge. Most of that was signal processing, particle transport simulation, and machine learning to squeeze better measurements out of noisy detector data.</p>
+            <p>Right now I'm building <a href="https://github.com/BlaineHeffron/soroban-sdk-tools" target="_blank" rel="noopener">soroban-sdk-tools</a> on a <strong>Stellar Community Fund grant</strong> -- derive macros that make Soroban smart contract development less painful. I'm also lead developer for <a href="https://songcraftgame.com" target="_blank" rel="noopener">Songcraft</a>, a music reading game for kids.</p>
+            <p>On the research side, I'm working on three projects that share a common mathematical backbone: division algebras in particle physics, multi-scale biological simulation, and information-geometric economics. More on that <a href="/research.html">here</a>.</p>
+            <div class="skills-grid">
+              <span class="skill-pill">Rust</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Soroban / Stellar</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">React / Preact</span>
+              <span class="skill-pill">Machine Learning</span>
+              <span class="skill-pill">Scientific Computing</span>
+              <span class="skill-pill">Signal Processing</span>
+              <span class="skill-pill">Smart Contracts</span>
+            </div>
+          </div>
+          <div class="about-sidebar reveal reveal-delay-2">
+            <h3>Education</h3>
+            <div class="education-item">
+              <div class="education-degree">PhD in Physics</div>
+              <div class="education-school">University of Tennessee</div>
+              <div class="education-year">2023</div>
+            </div>
+            <div class="education-item">
+              <div class="education-degree">MS in Physics</div>
+              <div class="education-school">University of Tennessee</div>
+              <div class="education-year">2017</div>
+            </div>
+            <div class="education-item">
+              <div class="education-degree">BS in Physics</div>
+              <div class="education-school">University of North Carolina</div>
+              <div class="education-year">2012</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Portfolio -->
+    <section id="work">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">Selected Work</h2>
+          <p class="section-desc">Open-source tools, production apps, and research code.</p>
+        </div>
+        <div class="portfolio-grid">
+
+          <!-- Featured: soroban-sdk-tools -->
+          <article class="project-card featured reveal reveal-delay-1">
+            <span class="card-badge">SCF Grant Recipient</span>
+            <h3>soroban-sdk-tools</h3>
+            <p>Derive macros for Soroban smart contracts that handle storage keys and error codes with compile-time uniqueness checks. Less boilerplate, fewer runtime surprises.</p>
+            <div class="card-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">Stellar</span>
+              <span class="tag">Soroban</span>
+              <span class="tag">Smart Contracts</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/BlaineHeffron/soroban-sdk-tools" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://github.com/BlaineHeffron/soroban-sdk-tools-demo" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Featured: Songcraft -->
+          <article class="project-card featured reveal reveal-delay-2">
+            <h3>Songcraft</h3>
+            <p>A music reading game where kids play along with sheet music in real time. Teachers can run classroom sessions, parents can track progress. Built on MusicXML with live note matching via WebSockets.</p>
+            <div class="card-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">EdTech</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <div class="card-links">
+              <a href="https://songcraftgame.com" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Site
+              </a>
+              <a href="https://github.com/BlaineHeffron/algorhythmiclabs" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- paper-search-mcp -->
+          <article class="project-card reveal reveal-delay-1">
+            <h3>paper-search-mcp</h3>
+            <p>MCP server for searching and indexing scientific papers across arXiv, Semantic Scholar, OpenAlex, and 6 more sources. Local hybrid search with BM25 + SPECTER2 embeddings.</p>
+            <div class="card-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">AI Tooling</span>
+              <span class="tag">MCP</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/BlaineHeffron/paper-search-mcp" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- symbolic-math-mcp -->
+          <article class="project-card reveal reveal-delay-2">
+            <h3>symbolic-math-mcp</h3>
+            <p>MCP server for symbolic mathematics and tensor algebra. SymPy-powered CAS with Christoffel symbols, Riemann/Ricci/Einstein tensors, gamma algebra, and Fierz identities.</p>
+            <div class="card-tags">
+              <span class="tag">C++</span>
+              <span class="tag">SymPy</span>
+              <span class="tag">Physics</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/BlaineHeffron/symbolic-math-mcp" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- ML for PROSPECT -->
+          <article class="project-card reveal reveal-delay-1">
+            <h3>ML for PROSPECT</h3>
+            <p>CNN/GCN-based event reconstruction for the PROSPECT neutrino detector. Achieved 3.3% improvement in signal statistics for the short-baseline oscillation search.</p>
+            <div class="card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Physics</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/BlaineHeffron/WaveformML" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="/static/uploads/PROSPECT_SE_ML_Summary.pdf" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Slides
+              </a>
+            </div>
+          </article>
+
+          <!-- dueno-monitor -->
+          <article class="project-card reveal reveal-delay-2">
+            <h3>dueno-monitor</h3>
+            <p>Remote server monitoring dashboard with real-time tmux and Claude Code session management. WebSocket-driven with live terminal output.</p>
+            <div class="card-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Fastify</span>
+              <span class="tag">WebSocket</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/BlaineHeffron/dueno-monitor" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Inventorium -->
+          <article class="project-card reveal reveal-delay-1">
+            <h3>Inventorium</h3>
+            <p>Inventory management app with an Astro marketing site. Tracks stock, generates reports, handles multi-location workflows.</p>
+            <div class="card-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Astro</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/BlaineHeffron/Inventorium" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- EvoHabit -->
+          <article class="project-card reveal reveal-delay-2">
+            <h3>EvoHabit</h3>
+            <p>Habit tracker that adapts to how you actually behave, not how you wish you did. Streak logic, flexible scheduling, progress visualization.</p>
+            <div class="card-tags">
+              <span class="tag">TypeScript</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/BlaineHeffron/EvoHabit" target="_blank" rel="noopener" class="card-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Preview -->
+    <section id="research" class="research-preview">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label">Research</span>
+          <h2 class="section-title">Independent Research</h2>
+          <p class="section-desc">Three research programs that share a common mathematical backbone. Papers headed to arXiv.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card reveal reveal-delay-1">
+            <div class="research-icon" aria-hidden="true">&#x2B21;</div>
+            <h3>Octophysics</h3>
+            <div class="research-field">Mathematical Physics</div>
+            <p>Division algebra foundations of the Standard Model. Computational verification of gauge group emergence from octonionic structure, Clifford algebra chains Cl(6)&rarr;Cl(10), and Spin(10) grand unification.</p>
+            <div class="card-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">Gauge Theory</span>
+              <span class="tag">Octonions</span>
+            </div>
+            <div class="research-status">Papers in preparation</div>
+          </article>
+
+          <article class="research-card reveal reveal-delay-2">
+            <div class="research-icon" aria-hidden="true">&#x2699;</div>
+            <h3>EmbryoSim</h3>
+            <div class="research-field">Computational Biology</div>
+            <p>Hierarchical embryonic development simulation across 5 biological scales using gauge theory, RG coarse-graining, fiber bundles, and topological invariants. From quantum to organism.</p>
+            <div class="card-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">Fiber Bundles</span>
+              <span class="tag">Active Inference</span>
+            </div>
+            <div class="research-status">Papers in preparation</div>
+          </article>
+
+          <article class="research-card reveal reveal-delay-3">
+            <div class="research-icon" aria-hidden="true">&#x2234;</div>
+            <h3>Entronomy</h3>
+            <div class="research-field">Information-Geometric Economics</div>
+            <p>Economics grounded in information theory. KL-divergence replaces subjective utility. Validated on macroeconomic data with sloppy spectrum analysis and 100% crisis detection precision after calibration.</p>
+            <div class="card-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">Fisher Information</span>
+              <span class="tag">Gauge Theory</span>
+            </div>
+            <div class="research-status">Papers in preparation</div>
+          </article>
+        </div>
+        <div class="reveal reveal-delay-4" style="text-align: center;">
+          <a href="/research.html" class="btn btn-ghost">Explore Research &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label">Publications</span>
+          <h2 class="section-title">Academic Publications</h2>
+          <p class="section-desc">Selected publications from the PROSPECT neutrino experiment, LEGEND dark matter search, and other collaborations.</p>
+        </div>
+        <ul class="publications-list reveal reveal-delay-1" id="pub-list">
+          <li class="pub-item">
+            <div class="pub-title"><a href="https://doi.org/10.1088/1748-0221/20/08/P08006" target="_blank" rel="noopener">Machine learning for single-ended event reconstruction in PROSPECT experiment</a></div>
+            <div class="pub-authors">M. Andriamirado et al. (PROSPECT Collaboration)</div>
+            <div class="pub-journal"><em>JINST</em> <strong>20</strong>, P08006 (2025)</div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-title">Final Search for Short-Baseline Neutrino Oscillations with the PROSPECT-I Detector at HFIR</div>
+            <div class="pub-authors">H.P. Mumm, M. Andriamirado et al.</div>
+            <div class="pub-journal"><em>Preprint</em> (2024)</div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-title">Reactor Antineutrino Directionality Measurement with the PROSPECT-I Detector</div>
+            <div class="pub-authors">H. Mumm, M. Andriamirado et al.</div>
+            <div class="pub-journal"><em>Preprint</em> (2024)</div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-title"><a href="https://doi.org/10.1103/PhysRevLett.131.021802" target="_blank" rel="noopener">Final Measurement of the &sup2;&sup3;&sup5;U Antineutrino Energy Spectrum with the PROSPECT-I Detector at HFIR</a></div>
+            <div class="pub-authors">M. Andriamirado, A.B. Balantekin, ... <span class="self">B. Heffron</span>, ... et al. (PROSPECT Collaboration)</div>
+            <div class="pub-journal"><em>Phys. Rev. Lett.</em> <strong>131</strong>, 021802 (2023)</div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-title">Joint Measurement of the &sup2;&sup3;&sup5;U Antineutrino Spectrum by PROSPECT and STEREO</div>
+            <div class="pub-authors">H. Almazan, M. Andriamirado et al.</div>
+            <div class="pub-journal"><em>Phys. Rev. Lett.</em> <strong>128</strong>, 081802 (2022)</div>
+          </li>
+          <li class="pub-item">
+            <div class="pub-title">Joint Determination of Reactor Antineutrino Spectra from &sup2;&sup3;&sup5;U and &sup2;&sup3;&sup9;Pu Fission by Daya Bay and PROSPECT</div>
+            <div class="pub-authors">F.P. An, M. Andriamirado et al.</div>
+            <div class="pub-journal"><em>Phys. Rev. Lett.</em> <strong>128</strong>, 081801 (2022)</div>
+          </li>
+          <!-- Additional publications loaded by JS -->
+        </ul>
+        <button class="pub-toggle reveal reveal-delay-2" id="pub-toggle" aria-expanded="false">
+          <span>Show all publications</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal reveal-delay-1">
+            <p>Want to talk about a project, have questions about the research, or just want to say hi? Drop me a line.</p>
+            <div class="contact-links">
+              <a href="mailto:blaine@blaineheffron.com" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                blaine@blaineheffron.com
+              </a>
+              <a href="https://github.com/BlaineHeffron" target="_blank" rel="noopener" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/blaine-heffron" target="_blank" rel="noopener" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://scholar.google.com/citations?user=8d-y4zoAAAAJ" target="_blank" rel="noopener" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Google Scholar
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal reveal-delay-2" action="https://formspree.io/f/xdoqagnv" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-text">&copy; 2026 Blaine Heffron</span>
+      <div class="footer-links">
+        <a href="https://github.com/BlaineHeffron" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/blaine-heffron" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=8d-y4zoAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
