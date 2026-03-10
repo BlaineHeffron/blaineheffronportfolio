@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Blaine Heffron</title>
+  <meta name="description" content="Independent research in mathematical physics (Octophysics), computational biology (EmbryoSim), and information-geometric economics (Entronomy) by Blaine Heffron.">
+  <meta name="author" content="Blaine Heffron">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://blaineheffron.com/research.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research — Blaine Heffron">
+  <meta property="og:description" content="Independent research in mathematical physics, computational biology, and information-geometric economics.">
+  <meta property="og:url" content="https://blaineheffron.com/research.html">
+  <meta property="og:site_name" content="Blaine Heffron">
+  <meta property="og:image" content="https://blaineheffron.com/assets/media/sharing.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Research — Blaine Heffron">
+  <meta name="twitter:description" content="Independent research in mathematical physics, computational biology, and information-geometric economics.">
+  <meta name="twitter:image" content="https://blaineheffron.com/assets/media/sharing.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Research — Blaine Heffron",
+    "url": "https://blaineheffron.com/research.html",
+    "description": "Independent research in mathematical physics (Octophysics), computational biology (EmbryoSim), and information-geometric economics (Entronomy).",
+    "author": { "@type": "Person", "name": "Blaine Heffron", "url": "https://blaineheffron.com/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://blaineheffron.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Research", "item": "https://blaineheffron.com/research.html" }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
+
+  <link rel="icon" href="/static/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/assets/media/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a href="#octophysics" class="skip-link">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">Blaine Heffron</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/research.html" class="active">Research</a></li>
+        <li><a href="/#publications">Publications</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/static/uploads/resume.pdf" target="_blank" rel="noopener">CV</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+            <span id="theme-icon">&#9789;</span>
+          </button>
+        </li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Research Hero -->
+    <section class="research-hero">
+      <div class="container">
+        <span class="section-label reveal">Independent Research</span>
+        <h1 class="reveal reveal-delay-1" style="margin-bottom: 20px;">Research Programs</h1>
+        <p class="section-desc reveal reveal-delay-2" style="max-width: 640px;">I work on three problems that look different on the surface but use the same math underneath: gauge fields, renormalization, and topology. Here's what each one is about.</p>
+      </div>
+    </section>
+
+    <!-- Octophysics -->
+    <section class="research-detail" id="octophysics">
+      <div class="container">
+        <div class="research-detail-header reveal">
+          <div class="research-detail-icon" aria-hidden="true">&#x2B21;</div>
+          <div class="research-detail-meta">
+            <div class="research-field">Mathematical Physics</div>
+            <h2>Octophysics</h2>
+          </div>
+        </div>
+        <p class="reveal reveal-delay-1" style="margin-bottom: 24px;">Octophysics is a Rust library for division algebra approaches to particle physics. The central idea: the Standard Model gauge group SU(3)&times;SU(2)&times;U(1) isn't arbitrary. It falls out of octonionic structure when you build up through Clifford algebra chains.</p>
+        <p class="reveal reveal-delay-1" style="margin-bottom: 32px;">Everything is verified computationally to machine precision (&lt;10<sup>&minus;10</sup>). The Weinberg angle comes out to sin&sup2;(&theta;<sub>W</sub>) = 3/8 at the GUT scale, three fermion generations emerge from S&#8323; family symmetry, and Spin(10) grand unification drops out of the sterile neutrino stabilizer. 494 tests pass.</p>
+
+        <div class="research-highlights reveal reveal-delay-2">
+          <div class="highlight-item">
+            <h4>Clifford Algebra Chain</h4>
+            <p>Cl(6) &rarr; Cl(8) &rarr; Cl(10) construction with exact algebraic verification of SM representations.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>G&#8322; Lattice Gauge Theory</h4>
+            <p>Quantum simulation infrastructure with glueball spectrum extraction and topological charge measurement.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>494 Validated Tests</h4>
+            <p>Tests cover octonion algebra, Jordan algebras, Peirce decomposition, and lattice observables.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Exceptional Lie Algebras</h4>
+            <p>G&#8322;, F&#8324;, E&#8326; trajectory following Dray-Manogue-Wilson exceptional algebra tower construction.</p>
+          </div>
+        </div>
+
+        <div class="card-tags reveal reveal-delay-3" style="margin-top: 24px;">
+          <span class="tag">Rust</span>
+          <span class="tag">Octonions</span>
+          <span class="tag">Clifford Algebras</span>
+          <span class="tag">Gauge Theory</span>
+          <span class="tag">Spin(10)</span>
+          <span class="tag">Lattice QCD</span>
+        </div>
+
+        <div class="research-cta reveal reveal-delay-3">
+          <h4>Papers in Preparation</h4>
+          <p>Writing up the review paper now. Targets: arXiv and a journal submission covering the Cl(6) through Cl(10) construction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EmbryoSim -->
+    <section class="research-detail" id="embryosim">
+      <div class="container">
+        <div class="research-detail-header reveal">
+          <div class="research-detail-icon" aria-hidden="true">&#x2699;</div>
+          <div class="research-detail-meta">
+            <div class="research-field">Computational Biology</div>
+            <h2>EmbryoSim</h2>
+          </div>
+        </div>
+        <p class="reveal reveal-delay-1" style="margin-bottom: 24px;">EmbryoSim models embryonic development across five biological scales, using the same gauge theory and fiber bundle math from Octophysics but applied to cells and tissues instead of quarks.</p>
+        <p class="reveal reveal-delay-1" style="margin-bottom: 32px;">It starts at the quantum level (Layer 0) and coarse-grains upward through molecular, cellular, tissue, and organism scales. Each layer connects to the next via renormalization group transforms, so you don't lose the physics that matters at each scale. 46 integration tests cover everything from Turing pattern formation to full gastrulation simulations.</p>
+
+        <div class="research-highlights reveal reveal-delay-2">
+          <div class="highlight-item">
+            <h4>5-Layer Architecture</h4>
+            <p>Quantum (1&ndash;10&Aring;) &rarr; Molecular (1&ndash;100nm) &rarr; Cellular (1&ndash;100&mu;m) &rarr; Tissue (0.1&ndash;10mm) &rarr; Organism (1&ndash;100mm).</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Active Nematic Dynamics</h4>
+            <p>2D/3D topological defect detection, tracking, and annihilation with Q-tensor field evolution.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Bioelectric Networks</h4>
+            <p>Gap junction gating with Vmem-morphogen coupling, Nernst/GHK equations, and prepatterning.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Active Inference</h4>
+            <p>Free energy principle drives tissue growth and morphogenetic decision-making at the tissue scale.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Persistent Homology</h4>
+            <p>Topological invariants track pattern evolution through sublevel and Vietoris-Rips filtrations.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>46 Integration Tests</h4>
+            <p>Turing patterns, nematic defect annihilation, gastrulation, adaptive timestep, and checkpoint resume.</p>
+          </div>
+        </div>
+
+        <div class="card-tags reveal reveal-delay-3" style="margin-top: 24px;">
+          <span class="tag">Rust</span>
+          <span class="tag">Fiber Bundles</span>
+          <span class="tag">Active Inference</span>
+          <span class="tag">Morphogenesis</span>
+          <span class="tag">RG Coarse-Graining</span>
+          <span class="tag">Persistent Homology</span>
+        </div>
+
+        <div class="research-cta reveal reveal-delay-3">
+          <h4>Papers in Preparation</h4>
+          <p>The framework paper is in progress. Will cover the 5-layer architecture and the RG bridging between scales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entronomy -->
+    <section class="research-detail" id="entronomy">
+      <div class="container">
+        <div class="research-detail-header reveal">
+          <div class="research-detail-icon" aria-hidden="true">&#x2234;</div>
+          <div class="research-detail-meta">
+            <div class="research-field">Information-Geometric Economics</div>
+            <h2>Entronomy</h2>
+          </div>
+        </div>
+        <p class="reveal reveal-delay-1" style="margin-bottom: 24px;">Entronomy throws out subjective utility and replaces it with information geometry. Economic value becomes a KL-divergence: V(&theta;) = &minus;D<sub>KL</sub>(p(O|&theta;) || p(O|&theta;<sub>eq</sub>)). Same gauge theory and Fisher information math as the other two projects, different domain.</p>
+        <p class="reveal reveal-delay-1" style="margin-bottom: 32px;">I've tested this on FRED macroeconomic data, FX markets, and equity panels. The sloppy spectrum structure is there in all five countries I checked (R&sup2; &gt; 0.94). Crisis detection hits 100% precision after calibration, with the 2008 GFC showing up in the eigenvalue spectrum 17 months early.</p>
+
+        <div class="research-highlights reveal reveal-delay-2">
+          <div class="highlight-item">
+            <h4>Sloppy Spectrum Confirmed</h4>
+            <p>7-variable US panel: R&sup2; = 0.97 with 2.8 decades eigenvalue spread. Universal across 5 countries (all R&sup2; &gt; 0.94).</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Crisis Detection</h4>
+            <p>100% recall, 100% precision (F1 = 1.0) after calibration. Pre-crisis dimension drop detected 17 months before GFC.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Gauge Structure Validated</h4>
+            <p>7-currency FX Wilson loops confirm flat connections. Independent validation across FRED and ECB cross-rates.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>Fisher-Optimal Portfolios</h4>
+            <p>Outperforms Markowitz at short estimation windows. Information-geometric Kelly criterion for optimal bet sizing.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>260 Passing Tests</h4>
+            <p>8 crates covering Fisher-Rao manifolds, homeostasis inference, gauge connections, critical phenomena, and empirical pipelines.</p>
+          </div>
+          <div class="highlight-item">
+            <h4>3 Research Papers</h4>
+            <p>Sloppy spectra in macro data, Fisher-optimal portfolios, and empirical gauge structure in currency markets.</p>
+          </div>
+        </div>
+
+        <div class="card-tags reveal reveal-delay-3" style="margin-top: 24px;">
+          <span class="tag">Rust</span>
+          <span class="tag">Fisher Information</span>
+          <span class="tag">KL-Divergence</span>
+          <span class="tag">Gauge Theory</span>
+          <span class="tag">Crisis Detection</span>
+          <span class="tag">Portfolio Theory</span>
+        </div>
+
+        <div class="research-cta reveal reveal-delay-3">
+          <h4>Papers in Preparation</h4>
+          <p>Three papers in draft: sloppy spectra in macro data, Fisher-optimal portfolios, and gauge structure in FX markets.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unifying Thread -->
+    <section style="background: var(--bg-primary);">
+      <div class="container" style="text-align: center; max-width: 720px;">
+        <div class="reveal">
+          <span class="section-label" style="justify-content: center;">The Unifying Thread</span>
+          <h2 class="section-title" style="margin-bottom: 24px;">One Mathematical Framework, Three Domains</h2>
+        </div>
+        <p class="reveal reveal-delay-1" style="margin: 0 auto 24px; text-align: center;">The same math keeps showing up. Gauge connections describe how things relate across positions. RG tells you what survives when you zoom out. Topology tells you what can't be smoothly deformed away. These aren't metaphors -- they're the actual computational tools in all three codebases.</p>
+        <p class="reveal reveal-delay-2" style="margin: 0 auto 40px; text-align: center;">I think that's because the underlying problem is the same: how does structure at one scale produce structure at another? Whether you're asking that about quarks, embryos, or currency markets, the math doesn't care.</p>
+        <div class="reveal reveal-delay-3">
+          <a href="/#contact" class="btn btn-primary">Discuss This Research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-text">&copy; 2026 Blaine Heffron</span>
+      <div class="footer-links">
+        <a href="https://github.com/BlaineHeffron" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/blaine-heffron" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=8d-y4zoAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
