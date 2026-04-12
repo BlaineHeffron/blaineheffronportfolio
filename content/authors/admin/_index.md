@@ -14,18 +14,18 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Full Stack Developer and Technical Consultant
+role: Consultant, founder, and technical systems builder
 
 # Short bio (displayed in user profile at end of posts)
-bio: Blaine Heffron is a recent Ph.D. graduate in physics and an experienced full-stack web developer. His expertise lies in signal processing, particle transport simulation, machine learning, and radiation detection. He is passionate about sustainable energy and finding ways to utilize data to make processes more efficient. Blaine currently serves as CTO and lead developer for Songcraft. Connect with him on [Github](https://github.com/blaineheffron) or [LinkedIn](https://linkedin.com/in/blaine-heffron), or contact him directly at (843.452.8866) or blaine@blaineheffron.com.
+bio: Blaine Heffron is a physics PhD and software consultant based in Charleston, SC. He helps teams clean up messy operations, automate repetitive work, and build software that fits the actual problem. Connect with him on [Github](https://github.com/blaineheffron) or [LinkedIn](https://linkedin.com/in/blaine-heffron), or contact him directly at blaine@blaineheffron.com.
 
 # Interests to show in About widget
 interests:
-  - Data Analysis
-  - Machine Learning & AI
-  - Process Optimization
-  - Sustainable Energy
-  - Supply Chain Analytics
+  - AI Systems
+  - Workflow Automation
+  - Scientific Computing
+  - Machine Learning
+  - Technical Product Development
 
 # Education to show in About widget
 education:
@@ -169,9 +169,9 @@ social:
 highlight_name: true
 ---
 
-Blaine is a full-stack web developer and physics Ph.D. graduate with over 12 years of programming and research experience. He currently works with AhaLabs, focusing on building smart contracts for EquitX and developing tooling like scaffold-stellar, building on prior contributions to js-stellar-sdk, stellar-cli, and Loam. His expertise spans Rust for efficient systems programming, smart contract development, and TypeScript for scalable applications. His doctoral research involved signal processing, particle transport simulation, and radiation detection, culminating in a recent publication using machine learning to enhance signal-to-background ratios in the PROSPECT neutrino physics experiment.
+Blaine is a physics PhD, founder, and technical consultant with over 12 years of programming and research experience. He works across software, AI workflows, scientific computing, developer tooling, and product engineering. He tends to do his best work when the system is messy, the logic is real, and somebody needs to sort out what should be automated, rebuilt, or cut.
 
-Career highlights include developing products for API and database integration at CData, applying machine learning in neutrino physics, and providing technical consulting to optimize website functionality and SEO. Notably, he created a web app integrated with Google Sheets for wedding planning, streamlining event management. He serves as the lead developer for Songcraft, an educational game aiding children in learning to read and play music.
+His background includes machine learning work in neutrino physics, developer tooling and smart contract work on the Stellar stack, and product development across education, operations, and technical software. He is the founder of StockForge and lead developer for Songcraft, an educational game that helps children learn to read and play music.
 
 You can connect with him on [Github](https://github.com/blaineheffron) or [LinkedIn](https://linkedin.com/in/blaine-heffron). Reach out to him directly via email at blaine@blaineheffron.com.
 {style="text-align: justify;"}
