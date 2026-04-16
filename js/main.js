@@ -14,7 +14,9 @@
   function setTheme(theme) {
     root.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    themeIcon.textContent = theme === 'dark' ? '\u263D' : '\u2600';
+    if (themeIcon) {
+      themeIcon.textContent = theme === 'dark' ? '\u263D' : '\u2600';
+    }
   }
 
   const saved = localStorage.getItem('theme');
@@ -24,42 +26,60 @@
     setTheme('light');
   }
 
-  themeToggle.addEventListener('click', function () {
-    setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-  });
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+  }
 
   // ---- Mobile Nav ----
   const hamburger = document.getElementById('nav-hamburger');
   const navLinks = document.getElementById('nav-links');
 
-  hamburger.addEventListener('click', function () {
-    const open = hamburger.classList.toggle('open');
-    navLinks.classList.toggle('open');
-    hamburger.setAttribute('aria-expanded', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  });
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function () {
+      const open = hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
 
-  navLinks.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-      hamburger.classList.remove('open');
-      navLinks.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-  });
+    navLinks.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        hamburger.classList.remove('open');
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    });
+  }
 
   // ---- Sticky Nav Background ----
   const nav = document.querySelector('.nav');
-  let lastScroll = 0;
+  let currentScrollY = window.scrollY || 0;
+  let navScrolled = false;
+  let scrollTicking = false;
+
+  function onScrollRaf() {
+    if (!nav) return;
+    const shouldScrollClass = currentScrollY > 40;
+    if (shouldScrollClass !== navScrolled) {
+      nav.classList.toggle('scrolled', shouldScrollClass);
+      navScrolled = shouldScrollClass;
+    }
+    scrollTicking = false;
+  }
 
   function onScroll() {
-    const y = window.scrollY;
-    nav.classList.toggle('scrolled', y > 40);
-    lastScroll = y;
+    currentScrollY = window.scrollY || 0;
+    if (!scrollTicking) {
+      scrollTicking = true;
+      requestAnimationFrame(onScrollRaf);
+    }
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  onScrollRaf();
 
   // ---- Scroll Reveal ----
   const reveals = document.querySelectorAll('.reveal');
@@ -128,6 +148,7 @@
       h = canvas.clientHeight;
       canvas.width = w * dpr;
       canvas.height = h * dpr;
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.scale(dpr, dpr);
       createLattice();
     }
@@ -137,7 +158,7 @@
 
     function animate() {
       time += 0.004;
-      scrollFactor = Math.min(window.scrollY / (h || 1), 1);
+      scrollFactor = Math.min(currentScrollY / (h || 1), 1);
 
       ctx.clearRect(0, 0, w, h);
       ctx.save();
@@ -399,6 +420,7 @@
   var pubToggle = document.getElementById('pub-toggle');
 
   if (pubList) {
+    var pubFragment = document.createDocumentFragment();
     publications.forEach(function (pub, i) {
       if (i < HTML_PRERENDERED) return; // already in HTML
 
@@ -421,8 +443,9 @@
         '<div class="pub-authors">' + authorsHtml + '</div>' +
         '<div class="pub-journal">' + journalLine + ' (' + pub.year + ')</div>';
 
-      pubList.appendChild(li);
+      pubFragment.appendChild(li);
     });
+    pubList.appendChild(pubFragment);
   }
 
   if (pubToggle) {

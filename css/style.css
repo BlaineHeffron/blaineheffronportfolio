@@ -4,7 +4,7 @@
    A physicist's precision meets editorial design
    ============================================ */
 
-/* Fonts loaded via <link> in HTML head for better LCP */
+/* Local/system font stacks to avoid external render-blocking font requests */
 
 /* --- Design Tokens --- */
 :root {
@@ -19,7 +19,7 @@
 
   --text-primary: #e6e6f0;
   --text-secondary: #9294ae;
-  --text-muted: #5a5c74;
+  --text-muted: #8f93b0;
 
   --accent: #00b4ec;
   --accent-dim: rgba(0, 180, 236, 0.10);
@@ -38,9 +38,9 @@
   --tag-border: rgba(0, 180, 236, 0.15);
 
   /* Typography */
-  --font-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
-  --font-body: 'Outfit', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SFMono-Regular', 'Cascadia Code', 'Consolas', monospace;
 
   /* Spacing */
   --section-pad: clamp(72px, 10vh, 128px);
@@ -72,7 +72,7 @@
 
   --text-primary: #14162e;
   --text-secondary: #52546e;
-  --text-muted: #8a8ca4;
+  --text-muted: #5f6378;
 
   --accent: #0070b8;
   --accent-dim: rgba(0, 112, 184, 0.07);
@@ -1129,8 +1129,8 @@ section:nth-child(odd) {
 }
 
 .footer-text {
-  font-size: 0.82rem;
-  color: var(--text-muted);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
 }
 
 .footer-links {
@@ -1139,8 +1139,9 @@ section:nth-child(odd) {
 }
 
 .footer-links a {
-  color: var(--text-muted);
-  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
   transition: color 0.2s ease;
 }
 

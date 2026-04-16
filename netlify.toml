@@ -13,6 +13,16 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
+  for = "/css/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/main.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
   for = "/static/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
@@ -24,7 +34,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self' https://formspree.io; frame-ancestors 'self'"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; script-src 'self'; connect-src 'self' https://formspree.io; frame-ancestors 'self'"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
 # Clean URLs for research page
