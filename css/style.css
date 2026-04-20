@@ -405,6 +405,17 @@ section:nth-child(odd) {
   z-index: 3;
 }
 
+.hero-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 420px);
+  gap: clamp(32px, 6vw, 88px);
+  align-items: center;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
 .hero-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.82rem;
@@ -451,6 +462,52 @@ section:nth-child(odd) {
   color: var(--text-muted);
   opacity: 0;
   animation: fadeUp 0.8s var(--ease-out) 0.75s forwards;
+}
+
+.hero-portrait {
+  position: relative;
+  margin: 0;
+  justify-self: end;
+  width: min(100%, 400px);
+  aspect-ratio: 4 / 5;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 28px 80px rgba(5, 10, 20, 0.35);
+  background:
+    linear-gradient(180deg, rgba(0, 180, 236, 0.12) 0%, rgba(0, 180, 236, 0.02) 100%),
+    rgba(255, 255, 255, 0.03);
+}
+
+.hero-portrait::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 12, 24, 0) 45%, rgba(7, 12, 24, 0.18) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-portrait picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+[data-theme="light"] .hero-portrait {
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.16);
+  background:
+    linear-gradient(180deg, rgba(0, 112, 184, 0.08) 0%, rgba(0, 112, 184, 0.02) 100%),
+    rgba(255, 255, 255, 0.92);
 }
 
 /* --- Buttons --- */
@@ -1373,6 +1430,15 @@ section:nth-child(odd) {
     font-size: clamp(2.2rem, 8vw, 3rem);
   }
 
+  .hero-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    justify-self: start;
+    width: min(100%, 320px);
+  }
+
   .form-row {
     grid-template-columns: 1fr;
   }
@@ -1385,6 +1451,15 @@ section:nth-child(odd) {
 }
 
 @media (max-width: 480px) {
+  .hero-shell {
+    gap: 24px;
+  }
+
+  .hero-portrait {
+    width: min(100%, 280px);
+    border-radius: 24px;
+  }
+
   .hero-actions {
     flex-direction: column;
   }
