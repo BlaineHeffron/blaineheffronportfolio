@@ -29,7 +29,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; script-src 'self'; connect-src 'self' https://formspree.io; frame-ancestors 'self'"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; script-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'self'; base-uri 'self'"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
 # Clean URLs for research page

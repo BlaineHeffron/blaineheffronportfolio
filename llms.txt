@@ -1,0 +1,23 @@
+# Blaine Heffron
+
+> Charleston-based AI automation consultant building workflow automation, internal tools, custom operations dashboards, and technical software for teams stuck in manual work.
+
+## Key Pages
+
+- [Home](https://blaineheffron.com/): AI automation consulting, workflow automation, custom ops dashboards, selected work, and contact.
+- [Research](https://blaineheffron.com/research.html): Research background, physics publications, machine learning, and scientific computing.
+- [Profile Card](https://blaineheffron.com/card/): Compact profile and contact page.
+
+## Services
+
+- Workflow bottleneck audits.
+- Measurable automation pilots.
+- Custom operations dashboards.
+- Internal tools and workflow integrations.
+- Technical AI systems, ML pipelines, and research software.
+
+## Contact
+
+- Email: blaine@blaineheffron.com
+- LinkedIn: https://www.linkedin.com/in/blaine-heffron
+- GitHub: https://github.com/BlaineHeffron
