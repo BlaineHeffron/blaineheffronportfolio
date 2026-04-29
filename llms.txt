@@ -7,6 +7,16 @@
 - [Home](https://blaineheffron.com/): AI automation consulting, workflow automation, custom ops dashboards, selected work, and contact.
 - [Research](https://blaineheffron.com/research.html): Research background, physics publications, machine learning, and scientific computing.
 - [Profile Card](https://blaineheffron.com/card/): Compact profile and contact page.
+- [Workflow Automation Consultant](https://blaineheffron.com/workflow-automation-consultant/): Workflow automation consulting for manual handoffs, follow-up, approvals, and reporting.
+- [Business Automation Consultant](https://blaineheffron.com/business-automation-consultant/): Practical automation for owner-led businesses.
+- [AI Automation Consulting Charleston SC](https://blaineheffron.com/ai-automation-consulting-charleston-sc/): Local AI automation consulting for Charleston-area businesses.
+- [Custom Operations Dashboard](https://blaineheffron.com/custom-operations-dashboard/): Custom dashboard development for owners who need one view of operational exceptions.
+- [Business Automation Audit](https://blaineheffron.com/business-automation-audit/): Diagnostic workflow audit before buying or building automation.
+- [Performance-Based Automation Pilot](https://blaineheffron.com/performance-based-automation-pilot/): Measurable pilot structure for workflows with a clear baseline.
+- [Zapier vs Make vs n8n](https://blaineheffron.com/workflow-automation-tools-zapier-make-n8n/): Tool-selection guidance for small-business workflow automation.
+- [Lead Follow-Up Automation](https://blaineheffron.com/lead-follow-up-automation/): Intake and follow-up automation for missed or stale leads.
+- [CRM Automation Consultant](https://blaineheffron.com/crm-automation-consultant/): CRM cleanup, routing, reminders, and reporting workflows.
+- [Technical AI Systems](https://blaineheffron.com/technical-ai-systems/): ML pipelines, research software, and technical AI systems.
 
 ## Services
 

@@ -1427,6 +1427,176 @@ section:nth-child(odd) {
   margin: 0 auto;
 }
 
+/* --- Service Pages --- */
+.service-page-body .nav {
+  background: rgba(4, 5, 14, 0.72);
+  backdrop-filter: blur(18px) saturate(1.15);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  border-bottom-color: var(--border-subtle);
+}
+
+[data-theme="light"] .service-page-body .nav {
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.service-hero {
+  min-height: 68svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: calc(var(--nav-height) + 72px);
+  padding-bottom: clamp(40px, 7vw, 72px);
+  background:
+    radial-gradient(circle at 78% 24%, rgba(0, 180, 236, 0.16), transparent 34%),
+    radial-gradient(circle at 16% 84%, rgba(212, 160, 48, 0.10), transparent 30%),
+    linear-gradient(135deg, var(--bg-deep) 0%, var(--bg-primary) 100%);
+}
+
+.service-hero-visual {
+  position: absolute;
+  inset: 0;
+  opacity: 0.34;
+  background-image:
+    linear-gradient(rgba(0, 180, 236, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 180, 236, 0.12) 1px, transparent 1px);
+  background-size: 84px 84px;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 24%, #000 74%, transparent 100%);
+  transform: rotate(-1deg) scale(1.04);
+}
+
+.service-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.service-hero h1 {
+  max-width: 900px;
+  margin-bottom: 24px;
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+}
+
+.service-hero .hero-tagline {
+  max-width: 720px;
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+}
+
+.service-section {
+  padding: clamp(64px, 9vw, 104px) 0;
+}
+
+.service-section-alt {
+  background: var(--bg-primary);
+}
+
+.service-two-column {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(32px, 7vw, 96px);
+  align-items: start;
+}
+
+.service-two-column h2,
+.service-proof h2,
+.service-final h2 {
+  max-width: 720px;
+}
+
+.service-check-list,
+.service-step-list,
+.service-metrics ul {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.service-check-list li,
+.service-step-list li,
+.service-metrics li {
+  position: relative;
+  padding: 18px 20px 18px 46px;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.service-check-list li::before,
+.service-metrics li::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 27px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.service-step-list {
+  counter-reset: service-step;
+}
+
+.service-step-list li {
+  counter-increment: service-step;
+}
+
+.service-step-list li::before {
+  content: counter(service-step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 34px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent-text);
+}
+
+.service-proof {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  gap: clamp(32px, 7vw, 88px);
+  align-items: start;
+}
+
+.service-proof p {
+  font-size: 1.05rem;
+  margin-top: 18px;
+}
+
+.service-metrics {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+}
+
+.service-metrics h3 {
+  margin-bottom: 18px;
+}
+
+.service-final {
+  padding: clamp(72px, 10vw, 112px) 0;
+  background:
+    linear-gradient(135deg, var(--accent-dim), transparent 52%),
+    var(--bg-primary);
+}
+
+.service-final-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+}
+
+.service-final-inner p {
+  grid-column: 1;
+  max-width: 760px;
+}
+
+.service-final-inner .btn {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+
 /* --- Responsive --- */
 @media (max-width: 900px) {
   .about-grid,
@@ -1476,6 +1646,18 @@ section:nth-child(odd) {
 
   .research-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-two-column,
+  .service-proof,
+  .service-final-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .service-final-inner .btn {
+    grid-row: auto;
+    grid-column: auto;
+    justify-self: start;
   }
 }
 
@@ -1596,6 +1778,25 @@ section:nth-child(odd) {
   }
 
   .services-outro-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .service-hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-height) + 56px);
+    padding-bottom: 44px;
+  }
+
+  .service-hero h1 {
+    font-size: clamp(2.1rem, 10vw, 2.85rem);
+  }
+
+  .service-metrics {
+    padding: 22px 20px;
+  }
+
+  .service-final-inner .btn {
     width: 100%;
     justify-content: center;
   }
