@@ -1,0 +1,136 @@
+\RequirePackage{pdfmanagement-testphase}
+\DeclareDocumentMetadata{
+  uncompress,
+  pdfversion=1.7,
+  lang=en-US
+}
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.55in]{geometry}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[hidelinks,pdfauthor={Blaine Heffron},pdftitle={Blaine Heffron Resume - Physics AI Training},pdfsubject={Physics PhD resume for AI model training and evaluation roles},pdfkeywords={Physics PhD, AI training, model evaluation, neutrino physics, machine learning, PROSPECT, scientific computing}]{hyperref}
+\usepackage{tagpdf}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\sloppy
+\tagpdfsetup{activate=Document,interwordspace=true}
+\setlist[itemize]{leftmargin=1.2em, itemsep=1.5pt, topsep=2pt, parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{black}}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\newcommand{\role}[4]{%
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}\\[-2pt]
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Blaine Heffron, PhD}}\\
+  Charleston, SC \;|\; 843.452.8866 \;|\; \href{mailto:blaine@blaineheffron.com}{blaine@blaineheffron.com}\\
+  \href{https://blaineheffron.com}{blaineheffron.com} \;|\;
+  \href{https://github.com/BlaineHeffron}{github.com/BlaineHeffron} \;|\;
+  \href{https://www.linkedin.com/in/blaine-heffron}{linkedin.com/in/blaine-heffron}\\
+  \href{https://scholar.google.com/citations?user=8d-y4zoAAAAJ}{scholar.google.com/citations?user=8d-y4zoAAAAJ}
+\end{center}
+
+\section*{Physics AI training profile}
+Physics PhD with a research background in neutrino physics, detector analysis, statistical inference, simulation, and machine learning. I have written and reviewed technical explanations, built reproducible analysis software, and checked noisy detector or model output against physical constraints. I am a good match for AI training work that needs hard physics problems, careful review of model reasoning, and clear explanations of what went wrong.
+
+\section*{AI model training relevance}
+\begin{itemize}
+  \item Create and validate advanced physics tasks in particle and nuclear physics, detector physics, statistical data analysis, classical mechanics, electromagnetism, quantum mechanics, and computational physics.
+  \item Trained to evaluate derivations, units, boundary conditions, approximations, numerical results, statistical claims, and hidden assumptions in complex technical answers.
+  \item Built ML and signal-processing workflows for PROSPECT, including CNN and graph neural network approaches for event reconstruction and classification under noisy detector conditions.
+  \item Write prompts, reference solutions, and grading notes; follow detailed rubrics while separating correct physics from answers that only sound right.
+\end{itemize}
+
+\section*{Education}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{PhD, Physics}, University of Tennessee, Knoxville \quad GPA: 3.98/4.0 & 2023\\
+\textbf{MS, Physics}, University of Tennessee, Knoxville \quad GPA: 4.0/4.0 & 2017\\
+\textbf{BS, Physics}, University of North Carolina at Chapel Hill \quad GPA: 3.7/4.0 & 2012\\
+\end{tabularx}
+
+\section*{Research experience}
+\role{Graduate Research Assistant}{Aug 2019 -- Jan 2023}{University of Tennessee, Department of Physics}{Knoxville, TN}
+\begin{itemize}
+  \item Developed analysis software in Python and C++ for the PROSPECT reactor neutrino experiment at Oak Ridge National Laboratory.
+  \item Applied machine learning to event reconstruction and background rejection, including graph neural networks for particle identification and sparse CNN methods for position and energy reconstruction.
+  \item Improved single-ended detector reconstruction in work later published by the collaboration, increasing usable statistics for PROSPECT analysis.
+  \item Planned and executed HFIR radiation field measurements with HPGe instrumentation; analyzed large datasets on reactor gamma backgrounds and detector constraints.
+  \item Mentored undergraduate and graduate researchers on physics analysis, software workflows, debugging, and technical communication.
+\end{itemize}
+
+\role{Graduate Research Assistant}{Aug 2014 -- Dec 2016}{University of Tennessee, Department of Physics}{Knoxville, TN}
+\begin{itemize}
+  \item Built simulation and analysis tooling for reactor and cosmogenic background studies supporting the PROSPECT detector program.
+  \item Produced documented research software and technical analysis for detector characterization, shielding studies, and experimental planning.
+\end{itemize}
+
+\role{Research Assistant}{Nov 2012 -- Aug 2014}{UNC Chapel Hill, Environmental Sciences and Engineering}{Chapel Hill, NC}
+\begin{itemize}
+  \item Built Python modeling tools for sunlight flux and smog chamber simulation, including nonlinear differential equation models for aerosol formation and dynamics.
+\end{itemize}
+
+\newpage
+\section*{Selected publications and research output}
+\begin{itemize}
+  \item \textbf{Machine learning for single-ended event reconstruction in PROSPECT experiment}. M. Andriamirado et al. (PROSPECT Collaboration), \textit{JINST} 20, P08006 (2025).
+  \item \textbf{Final Measurement of the U-235 Antineutrino Energy Spectrum with the PROSPECT-I Detector at HFIR}. M. Andriamirado et al. (PROSPECT Collaboration), \textit{Phys. Rev. Lett.} 131, 021802 (2023).
+  \item \textbf{Joint Measurement of the U-235 Antineutrino Spectrum by PROSPECT and STEREO}. H. Almazan, M. Andriamirado et al., \textit{Phys. Rev. Lett.} 128, 081802 (2022).
+  \item Public research materials include PROSPECT ML summary slides and open-source WaveformML code linked from \href{https://blaineheffron.com}{blaineheffron.com}.
+\end{itemize}
+
+\section*{Software, AI, and technical experience}
+\role{Independent Consultant / Software Developer}{Feb 2023 -- Present}{Self-Employed}{Charleston, SC}
+\begin{itemize}
+  \item Build AI automation, workflow tools, internal dashboards, data pipelines, and research-adjacent software in Python, TypeScript, Rust, C++, and SQL.
+  \item Use LLMs in applied systems where generated output has to be checked, routed, documented, or reviewed before anyone trusts it.
+  \item Developed paper-search and symbolic-math MCP tools for scientific paper search, local indexing, symbolic mathematics, and tensor algebra workflows.
+  \item Turn messy technical requirements into working systems with clear documentation, validation paths, and handoff notes.
+\end{itemize}
+
+\role{Software Engineer / Smart Contract Tooling Contractor}{2024 -- 2025}{AhaLabs / Stellar Ecosystem}{Remote}
+\begin{itemize}
+  \item Built Rust and TypeScript developer tooling for Stellar smart contract development, including generated bindings, deployment tooling, and build/watch workflows.
+  \item Won a \$60k Stellar Community Fund grant for soroban-sdk-tools, an open-source Rust crate reducing contract boilerplate around storage, errors, imports, and auth testing.
+\end{itemize}
+
+\role{Technical Support Engineer}{Mar 2018 -- Aug 2019}{CData Software}{Remote}
+\begin{itemize}
+  \item Supported enterprise Java and C\# data connectivity products across databases, APIs, and application environments.
+  \item Reproduced and resolved complex technical issues, documented fixes, and built tooling to generate integrations from OpenAPI specifications.
+\end{itemize}
+
+\section*{Technical skills}
+\textbf{Physics:} Particle physics, nuclear physics, neutrino physics, detector analysis, radiation backgrounds, HPGe measurements, signal processing, simulation, statistical analysis, uncertainty reasoning\\
+\textbf{AI/ML:} PyTorch, PyTorch Geometric, CNNs, graph neural networks, classification, regression, feature engineering, model evaluation, data validation\\
+\textbf{Programming:} Python, C++, Rust, TypeScript, JavaScript, SQL, Java, C\#, Linux, Git\\
+\textbf{Communication:} Research writing, technical documentation, code review, mentoring, rubric-based evaluation, precise written feedback
+
+\section*{Honors}
+Extraordinary Professional Promise, UT Knoxville \hfill 2016\\
+Stelson Fellowship, UT Knoxville \hfill 2016\\
+Chancellor's Scholarship, UT Knoxville \hfill 2014--2016\\
+Robert C. Byrd Scholarship, UNC Chapel Hill \hfill 2008--2012
+
+\vfill
+\begin{center}
+{\footnotesize Last updated: May 10, 2026}
+\end{center}
+
+\end{document}
